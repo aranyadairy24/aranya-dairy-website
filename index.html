@@ -32,9 +32,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+<!-- HEADER SECTION -->
 <header class="header">
     <div class="header-inner">
 
+        <!-- Official Logo -->
         <a href="#home" class="logo">
             <img src="assets/logo/aranya-logo.png" alt="Aranya Logo">
 
@@ -44,51 +46,64 @@
             </div>
         </a>
 
-        <button class="menu-toggle" id="menuToggle">
-    ☰
-</button><nav class="navigation">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#products">Products</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+            ☰
+        </button>
 
-        <a href="#contact" class="contact-btn">Contact Us</a>
+        <nav class="navigation">
+    <a href="#home" data-i18n="navHome">Home</a>
+    <a href="#about" data-i18n="navAbout">About</a>
+    <a href="#products" data-i18n="navProducts">Products</a>
+    <a href="#gallery" data-i18n="navGallery">Gallery</a>
+    <a href="#contact" data-i18n="navContact">Contact</a>
+</nav>
+
+        <!-- Language & Theme Controls -->
+        <div class="header-controls">
+            <button id="languageToggle" class="control-btn">
+                English
+            </button>
+
+            <button id="themeToggle" class="control-btn">
+                🌙 Dark
+            </button>
+        </div>
+
+        <!-- Contact Button -->
+        <a href="#contact" class="contact-btn" data-i18n="navContactButton">Contact Us</a>
 
     </div>
 </header>
 
-</header>
 <!-- Hero Section -->
 <section class="hero" id="home">
 
     <div class="hero-content">
 
-        <span class="hero-tag">
-            WELCOME TO ARANYA DAIRY & CATTLE FARM
-        </span>
+        <span class="hero-tag" data-i18n="heroTag">
+    WELCOME TO ARANYA DAIRY & CATTLE FARM
+</span>
 
-        <h1>
-            প্রকৃতির যত্নে,<br>
-            বিশুদ্ধতার পথে।
-        </h1>
-
-        <p>
-            প্রাকৃতিক পরিবেশে যত্ন ও ভালোবাসায়
-            গড়ে ওঠা আমাদের খামার।
-            বিশ্বাস ও গুণগত মানই আমাদের অঙ্গীকার।
-        </p>
+        <h1 data-i18n="heroTitle">
+    প্রকৃতির যত্নে,<br>
+    বিশুদ্ধতার পথে।
+</h1>
+        <p data-i18n="heroDescription">
+    প্রাকৃতিক পরিবেশে যত্ন ও ভালোবাসায়
+    গড়ে ওঠা আমাদের খামার।
+    বিশ্বাস ও গুণগত মানই আমাদের অঙ্গীকার।
+</p>
 
         <div class="hero-buttons">
 
-            <a href="#about" class="primary-btn">
-                Explore Our Farm
-            </a>
+           <a href="#about" class="primary-btn" data-i18n="heroExplore">
+    Explore Our Farm
+</a>
 
-            <a href="#contact" class="secondary-btn">
-                Contact Us
-            </a>
+            <a href="#contact" class="secondary-btn" data-i18n="heroContact">
+    Contact Us
+</a>
 
         </div>
 
@@ -114,30 +129,29 @@
 
         <div class="about-content">
 
-            <span class="section-label">
-                ABOUT ARANYA
-            </span>
+            <span class="section-label" data-i18n="aboutLabel">
+    ABOUT ARANYA
+</span>
 
-            <h2>
-                আমাদের গল্প,<br>
-                আমাদের অঙ্গীকার।
-            </h2>
+           <h2 data-i18n="aboutTitle">
+    আমাদের গল্প,<br>
+    আমাদের অঙ্গীকার।
+</h2>
+            <p data-i18n="aboutDescription1">
+    অরণ্য ডেইরি এন্ড ক্যাটল ফার্ম
+    মৌলভীবাজারের বর্ষিজোড়ায় অবস্থিত
+    একটি আধুনিক ডেইরি ও ক্যাটল ফার্ম।
+</p>
 
-            <p>
-                অরণ্য ডেইরি এন্ড ক্যাটল ফার্ম
-                মৌলভীবাজারের বর্ষিজোড়ায় অবস্থিত
-                একটি আধুনিক ডেইরি ও ক্যাটল ফার্ম।
-            </p>
+            <p data-i18n="aboutDescription2">
+    প্রাণীর যত্ন, পরিচ্ছন্ন পরিবেশ
+    এবং দায়িত্বশীল খামার ব্যবস্থাপনাকে
+    আমরা সর্বোচ্চ গুরুত্ব দিই।
+</p>
 
-            <p>
-                প্রাণীর যত্ন, পরিচ্ছন্ন পরিবেশ
-                এবং দায়িত্বশীল খামার ব্যবস্থাপনাকে
-                আমরা সর্বোচ্চ গুরুত্ব দিই।
-            </p>
-
-            <a href="#contact" class="about-btn">
-                Learn More →
-            </a>
+            <a href="#contact" class="about-btn" data-i18n="aboutButton">
+    Learn More →
+</a>
 
         </div>
 
@@ -150,14 +164,13 @@
 
     <div class="products-heading">
 
-        <span>OUR PRODUCTS</span>
+       <span data-i18n="productsLabel">OUR PRODUCTS</span>
 
-        <h2>আমাদের পণ্যসমূহ</h2>
+<h2 data-i18n="productsTitle">আমাদের পণ্যসমূহ</h2>
 
-        <p>
-            অরণ্য ডেইরি এন্ড ক্যাটল ফার্মের
-            নিজস্ব খামারের পণ্য।
-        </p>
+<p data-i18n="productsDescription">
+    অরণ্য ডেইরি এন্ড ক্যাটল ফার্মের নিজস্ব খামারের পণ্য।
+</p>
 
     </div>
 
@@ -175,28 +188,28 @@
 
     <div class="product-info">
 
-        <span>FRESH DAIRY PRODUCT</span>
+        <span data-i18n="milkCategory">FRESH DAIRY PRODUCT</span>
 
-        <h3>খাঁটি গরুর দুধ</h3>
+        <h3 data-i18n="milkTitle">খাঁটি গরুর দুধ</h3>
 
-        <p>
-            অরণ্য ডেইরি এন্ড ক্যাটল ফার্মের
-            দুধ সংগ্রহ ও সরবরাহের তথ্য।
-        </p>
+        <p data-i18n="milkDescription">
+    অরণ্য ডেইরি এন্ড ক্যাটল ফার্মের
+    দুধ সংগ্রহ ও সরবরাহের তথ্য।
+</p>
 
         <div class="price-list">
             <div>
-                <span>500 ML</span>
+                <span data-i18n="milkUnit500">500 ML</span>
                 <strong>৳50</strong>
             </div>
 
             <div>
-                <span>1 Litre</span>
+                <span data-i18n="milkUnit1000">1 Litre</span>
                 <strong>৳100</strong>
             </div>
         </div>
 
-        <a href="#contact" class="product-order-btn">অর্ডার করুন →</a>
+       <a href="#contact" class="product-order-btn" data-i18n="orderButton">অর্ডার করুন →</a>
 
     </div>
 
@@ -210,23 +223,23 @@
 
     <div class="product-info">
 
-        <span>TRADITIONAL DAIRY</span>
+        <span data-i18n="gheeCategory">TRADITIONAL DAIRY</span>
 
-        <h3>খাঁটি ঘি</h3>
+        <h3 data-i18n="gheeTitle">খাঁটি ঘি</h3>
 
-        <p>
-            অরণ্য ডেইরি এন্ড ক্যাটল ফার্মের
-            ঘি সম্পর্কে বিস্তারিত জানতে যোগাযোগ করুন।
-        </p>
+        <p data-i18n="gheeDescription">
+    অরণ্য ডেইরি এন্ড ক্যাটল ফার্মের
+    ঘি সম্পর্কে বিস্তারিত জানতে যোগাযোগ করুন।
+</p>
 
         <div class="price-list">
             <div>
-                <span>500 Gram</span>
+                <span data-i18n="gheeUnit">500 Gram</span>
                 <strong>৳850</strong>
             </div>
         </div>
 
-        <a href="#contact" class="product-order-btn">অর্ডার করুন →</a>
+        <a href="#contact" class="product-order-btn" data-i18n="orderButton">অর্ডার করুন →</a>
 
     </div>
 
@@ -240,13 +253,13 @@
 
     <div class="gallery-heading">
 
-        <span>OUR FARM MOMENTS</span>
+        <span data-i18n="galleryLabel">OUR FARM MOMENTS</span>
 
-        <h2>অরণ্যের খামার</h2>
+<h2 data-i18n="galleryTitle">অরণ্যের খামার</h2>
 
-        <p>
-            আমাদের খামারের প্রতিদিনের কিছু মুহূর্ত।
-        </p>
+<p data-i18n="galleryDescription">
+    আমাদের খামারের প্রতিদিনের কিছু মুহূর্ত।
+</p>
 
     </div>
 
@@ -307,7 +320,7 @@
     <img id="lightboxImage" src="" alt="Farm Image">
 
 </div>
-<script src="js/script.js"></script>
+
 <!-- CONTACT SECTION -->
 
 <section class="contact-section" id="contact">
@@ -316,44 +329,43 @@
 
         <div class="contact-content">
 
-            <span>GET IN TOUCH</span>
+           <span data-i18n="contactLabel">GET IN TOUCH</span>
 
-            <h2>
-                অরণ্যের সঙ্গে<br>
-                থাকুন সংযুক্ত।
-            </h2>
+            <h2 data-i18n="contactTitle">
+    অরণ্যের সঙ্গে<br>
+    থাকুন সংযুক্ত।
+</h2>
 
-            <p>
-                আমাদের দুধ ও ঘি সম্পর্কে জানতে,
-                অর্ডার করতে অথবা খামার সম্পর্কে
-                বিস্তারিত জানতে যোগাযোগ করুন।
-            </p>
+            <p data-i18n="contactDescription">
+    আমাদের দুধ ও ঘি সম্পর্কে জানতে,
+    অর্ডার করতে অথবা খামার সম্পর্কে
+    বিস্তারিত জানতে যোগাযোগ করুন।
+</p>
 
-            <a href="tel:01912522392" class="contact-button">
-                Call Now →
-            </a>
+            <a href="tel:01912522392" class="contact-button" data-i18n="callButton">
+    Call Now →
+</a>
 
         </div>
 
         <div class="contact-details">
 
             <div>
-                <small>PHONE NUMBER</small>
-                <p>01912-522392</p>
-                <p>01345-219198</p>
-            </div>
+    <small data-i18n="phoneLabel">PHONE NUMBER</small>
+    <p>01912-522392</p>
+    <p>01345-219198</p>
+</div>
+
+           <div>
+    <small data-i18n="emailLabel">EMAIL ADDRESS</small>
+    <p>aranyadairy24@gmail.com</p>
+</div>
 
             <div>
-                <small>EMAIL ADDRESS</small>
-                <p>aranyadairy24@gmail.com</p>
-            </div>
-
-            <div>
-                <small>OUR LOCATION</small>
-                <p>বর্ষিজোড়া, মৌলভীবাজার-৩২০০</p>
-                <p>সিলেট, বাংলাদেশ</p>
-            </div>
-
+    <small data-i18n="locationLabel">OUR LOCATION</small>
+    <p data-i18n="locationAddress">বর্ষিজোড়া, মৌলভীবাজার-৩২০০</p>
+    <p data-i18n="locationCountry">সিলেট, বাংলাদেশ</p>
+</div>
         </div>
 
     </div>
@@ -378,36 +390,47 @@
 
             <span>ARANYA DAIRY & CATTLE FARM</span>
 
-            <p>
-                প্রকৃতির যত্নে, বিশুদ্ধতার পথে।
-            </p>
+           <p data-i18n="footerSlogan">
+    প্রকৃতির যত্নে, বিশুদ্ধতার পথে।
+</p>
 
         </div>
 
 
         <div class="footer-links">
 
-            <h4>QUICK LINKS</h4>
+            <h4 data-i18n="footerQuickLinks">QUICK LINKS</h4>
 
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#products">Our Products</a>
-            <a href="#gallery">Farm Gallery</a>
-            <a href="#contact">Contact</a>
+           <a href="#home" data-i18n="navHome">Home</a>
+<a href="#about" data-i18n="footerAbout">About Us</a>
+<a href="#products" data-i18n="navProducts">Our Products</a>
+<a href="#gallery" data-i18n="footerGallery">Farm Gallery</a>
+<a href="#contact" data-i18n="navContact">Contact</a>
 
         </div>
 
 
         <div class="footer-contact">
 
-            <h4>CONTACT INFORMATION</h4>
+            <h4 data-i18n="footerContact">CONTACT INFORMATION</h4>
 
             <p>01912-522392</p>
             <p>01345-219198</p>
             <p>aranyadairy24@gmail.com</p>
-            <p>Barshijura, Moulvibazar</p>
+            <p data-i18n="footerAddress">Barshijura, Moulvibazar</p>
 
         </div>
+        <div class="footer-social">
+    <h4 data-i18n="footerFollow">FOLLOW US</h4>
+
+    <a href="https://www.facebook.com/share/1Djym7U95g/" target="_blank" rel="noopener noreferrer">
+        Facebook
+    </a>
+
+    <a href="https://www.instagram.com/aranya_dairy_and_cattle_farm?dlrf=MXUwaG9ma3A0NnBkZQ==" target="_blank" rel="noopener noreferrer">
+        Instagram
+    </a>
+</div>
 
     </div>
 
@@ -415,13 +438,14 @@
     <div class="footer-bottom">
 
         <p>
-            © <span id="currentYear"></span>
-            Aranya Dairy & Cattle Farm.
-            All Rights Reserved.
-        </p>
+    © <span id="currentYear"></span>
+    Aranya Dairy & Cattle Farm.
+    <span data-i18n="copyright">All Rights Reserved.</span>
+</p>
 
     </div>
 
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
